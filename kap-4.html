@@ -6,13 +6,14 @@
         <style>
             body {
                 background-color: silver;
-                margin:1%;
+                margin:2%;
             }
             p{
-                font-family:sans-serif;
+                font-family:serif;
+                font-size:xx-large;
             }
-            .Learn{
-                font-size:large;
+            .learn{ 
+                font-size:large; /*Jag skrev som i boken men det är fel, klassen borde vara .learn*/
             }
             .easy{
                 width:200px;
@@ -27,20 +28,39 @@
                 font-size:x-small;
                 color:gold;
             }
+            #b{
+                margin:200px;
+            }
+            #katt > .apa{
+                color:bisque;
+                margin:1px;
+            }
+            .easy + .learn{
+                color:brown;
+                font-family:sans-serif;
+            }
         </style>
     </head>
     <body lang="la">
+        <div lang="sv" id="katt">
+            <p class="apa">
+                Min apa är en katt.
+            </p>
+        </div>
         <p class="learn easy" id="a">
             Lorem ipsum dolor sit amet.
         </p>
         <p class="learn" id="b">
-            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet. <!--Exemplet ifrån boken ger inte det resultat som den säger att det borde.-->
         </p>
         <p id="c">
             Lorem ipsum dolor sit amet.
         </p>
-        <p class="apa" id="d">
+        <p lang="sv" class="apa" id="d">
             Min apa har tre hattar.
+        </p>
+        <p lang="sv">
+            Den stora stenen sover fint.
         </p>
     </body>
 </html>
