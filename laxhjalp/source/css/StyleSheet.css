@@ -9,9 +9,11 @@ body {
     font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
     font-size:100%;
 }
+/*
 section, header, footer{
     outline:1px solid red;
 }
+    */
 header{
     text-align:center;
 }
@@ -26,6 +28,19 @@ header{
 }
 h1::first-letter{
     color:#00AF64;
+}
+.startpage .logo{
+    width:235px;
+    height:198px;
+}
+.hwrap{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+.hwrap > a{
+    margin-right:30px;
 }
 .startpage header,
 .startpage footer{
