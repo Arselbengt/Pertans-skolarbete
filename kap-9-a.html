@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>Uppgift 9A, Arbetsboken WU1</title>
+    <meta name="description" content="Arbetsboken Webbteknik 1, Uppgift 9A" />
+    <style>
+        svg > rect:first-child{
+            fill:rgb(200,100,100,0.5);
+        }
+        svg > circle{
+            fill:rgb(0, 255, 255);
+            stroke-width:7;
+            stroke:orange;
+        }
+        svg > line{
+            stroke:black;
+            stroke-width:1px;
+        }
+        svg > polyline{
+            fill:none;
+            stroke:midnightblue;
+            stroke-width:2;
+        }
+        svg > path {
+            stroke:black;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uppgift 9A - testa SVG</h1>
+    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="40" width="250" height="100" fill="rgb(20,255,20)" stroke="none" />
+        <circle cx="80" cy="150" r="100" fill="rgba(50, 200, 50, 0.5)" stroke="black" stroke-width="3" />
+        <ellipse cx="170" cy="140" rx="120" ry="60" fill="rgba(50, 50, 250, 0.5)" />
+        <rect x="270" y="140" width="129" height="90" fill="rgb(1,1,1,0)" stroke="orange" stroke-width="3"/>
+        <line x1="100" y1="100" x2="400" y2="300"/>
+        <polyline points="1,300 1,1 399,299 399,1"/>
+        <path d="M 1 100 l 100 0 a 50 20 90 0 1 100 0 Z"/>
+    </svg>
+</body>
+</html>
